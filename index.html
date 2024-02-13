@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPG Initiative tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="newscript.js" defer></script>
+  </head>
+  <body>
+    <h1>Initiative Tracker</h1>
+    <form id="initiativeForm">
+      <input
+        type="text"
+        id="characterName"
+        placeholder="Character Name"
+        required
+      />
+      <input
+        type="number"
+        id="initiativeValue"
+        placeholder="Initiative"
+        required
+      />
+      <button type="submit" id="rndIniButton">Random initiative</button>
+      <br />
+      <button type="submit">Add characters and (initial) values</button>
+      <br />
+      <button type="button" id="clearValuesButton">Clear only values</button>
+      <button type="button" id="clearButton">Clear EVERYTHING</button>
+    </form>
+    <ul id="initiativeList"></ul>
+  </body>
+</html>

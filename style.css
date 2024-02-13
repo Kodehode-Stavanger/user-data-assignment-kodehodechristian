@@ -1,0 +1,9 @@
+* {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: none;
+}
