@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPG Initiative tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>RPG Initiative Tracker</h1>
+    <div id="wrap-div">
+      <div id="players">
+        <h2>Players</h2>
+        <form id="initiativeFormPlayers">
+          <input
+            type="text"
+            id="playerName"
+            placeholder="Input players(,)"
+            required
+            autocomplete="off"
+          />
+          <br />
+          <button type="submit">Add players & roll (D20)</button>
+          <br />
+          <button type="button" id="rerollPlayersButton">Reroll (D20)</button>
+          <button type="button" id="clearAllPlayersButton">
+            Clear players
+          </button>
+        </form>
+        <ul id="initiativeListPlayers"></ul>
+      </div>
+      <div id="monsters">
+        <h2>Monsters</h2>
+        <form id="initiativeFormMonsters">
+          <input
+            type="text"
+            id="numberOfMonsters"
+            placeholder="Number of monsters"
+            required
+            autocomplete="off"
+          />
+          <br />
+
+          <button type="submit">Add monsters & roll (D20)</button>
+          <br />
+          <button type="button" id="rerollMonstersButton">Reroll (D20)</button>
+          <button type="button" id="clearAllMonstersButton">
+            Clear monsters
+          </button>
+        </form>
+        <ul id="initiativeListMonsters"></ul>
+      </div>
+    </div>
+    <div id="nextTurnDiv">
+      <button type="button" id="nextTurn">Next player/monster</button>
+    </div>
+  </body>
+</html>
